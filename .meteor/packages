@@ -8,3 +8,7 @@ meteor-platform
 autopublish
 insecure
 bootstrap
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+iron:router
