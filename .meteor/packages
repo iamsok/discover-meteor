@@ -6,8 +6,10 @@
 
 meteor-platform
 insecure
-bootstrap
 aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
 iron:router
+accounts-password
+twbs:bootstrap
+ian:accounts-ui-bootstrap-3
