@@ -1,14 +1,7 @@
-Posts = new Mongo.Collection('posts');
+Posts = new Meteor.Collection('posts');
 
-PostsSchema = new SimpleSchema({
-  title: {
-    type: String,
-    max: 100
-  },
-  url: {
-    type: String,
-    regEx: SimpleSchema.RegEx.Url
+Posts.allow({
+  insert:function(userID, doc) {
+    return !! userId;
   }
-});
-
-Posts.attachSchema(PostsSchema);
+})
